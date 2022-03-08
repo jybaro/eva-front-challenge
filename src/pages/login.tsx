@@ -17,29 +17,6 @@ export default function Login() {
     setLoggedIn(true);
     setUser(email);
     navigate('/dashboard' as never, { replace: true });
-    // try {
-
-    //   //   const response = await fetch('/api/login', {
-    //   //     method: 'POST',
-    //   //     headers: {
-    //   //       'Content-Type': 'application/json',
-    //   //     },
-    //   //     body: JSON.stringify({
-    //   //       email,
-    //   //       password,
-    //   //     }),
-    //   //   });
-    //   //   const data = await response.json();
-    //   //   if (data.error) {
-    //   //     setError(data.error);
-    //   //   } else {
-    //   //     setLoggedIn(true);
-    //   //     setUser(data.user);
-    //   //   }
-    // } catch (err) {
-    //   console.log(err);
-    //   setError('Something went wrong');
-    // }
     setLoading(false);
   };
 

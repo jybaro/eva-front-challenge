@@ -1,17 +1,7 @@
-import {
-  Table,
-  Button,
-  Space,
-  Input,
-  Select,
-  DatePicker,
-  message,
-  Layout,
-} from 'antd';
-import { SearchOutlined } from '@ant-design/icons';
+import { Space, Layout } from 'antd';
 import { Link } from 'react-router-dom';
 
-const { Header, Footer, Sider, Content } = Layout;
+const { Header, Footer, Content } = Layout;
 
 export default function AuthLayout(opts: any) {
   const { children } = opts;

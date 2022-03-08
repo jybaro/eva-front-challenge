@@ -11,7 +11,7 @@ export default async function getList(code?: string) {
   let formattedData: any[] = [];
 
   Object.keys(RAW).map((crypto) => {
-    formattedData.push({
+    return formattedData.push({
       key: crypto,
       price: RAW[crypto]['USD']['PRICE'],
       market_cap: RAW[crypto]['USD'].MKTCAP,

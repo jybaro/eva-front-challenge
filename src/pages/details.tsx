@@ -1,6 +1,5 @@
-import { Descriptions, Badge, Button } from 'antd';
+import { Descriptions, Button } from 'antd';
 import { useNavigate, useParams, useLocation } from 'react-router-dom';
-import getPrices from '../services/getPrices';
 
 export default function Details() {
   const { id } = useParams();

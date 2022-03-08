@@ -1,19 +1,4 @@
-import { useState, useEffect } from 'react';
-import getPrices from '../services/getPrices';
-import Loading from './Loading';
-import usePrice from '../hooks/PricesHook';
-import {
-  Table,
-  Button,
-  Space,
-  Input,
-  Select,
-  DatePicker,
-  message,
-  Layout,
-} from 'antd';
-import { SearchOutlined } from '@ant-design/icons';
-const { Header, Footer, Sider, Content } = Layout;
+import { Table, Button } from 'antd';
 
 export default function CryptoList(opts: any) {
   const { cryptos, viewDetails } = opts;

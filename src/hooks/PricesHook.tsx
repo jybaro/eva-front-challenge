@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import getPrices from '../services/getPrices';
 
-export default () => {
+export default function PricesHook() {
   const [price, setPrice] = useState({
     loading: true,
     cryptos: [],
@@ -24,4 +24,4 @@ export default () => {
   }, []);
 
   return price;
-};
+}
